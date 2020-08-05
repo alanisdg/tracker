@@ -42,7 +42,7 @@
 
                 </span>
                 <span class="user-role">
-                    @foreach($user->roles as $role)
+                    @foreach(Auth::user()->roles as $role)
                     {{$role->name}}
                     @endforeach
                 </span>
