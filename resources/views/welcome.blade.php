@@ -80,8 +80,9 @@
             @endif
 
             <div class="content">
+            
                 <div class="title m-b-md">
-                    DIGITAL ADMIN TRACK
+                    
                 </div>
 
                 <div class="links">
