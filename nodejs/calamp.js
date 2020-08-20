@@ -4,12 +4,7 @@ var moment = require('moment-timezone');
 var mysql = require('mysql');
 var request = require('request');
 var io = require('socket.io')(3000);
-var convertBase = require('./convertBase')
-var tracking = require('./tracking')
-var inside = require('point-in-polygon');
-var functions = require('./functions')
-const nodemailer = require('nodemailer');
-var smtpTransport = require('nodemailer-smtp-transport');
+
 
 var Server = function(){
     var s = this;
