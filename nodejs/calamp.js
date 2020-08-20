@@ -44,9 +44,10 @@ var Server = function(){
     }
 
     this.process_dgram = function(datagram,guest){
-        // console.log('[--- ('+moment().tz("America/Monterrey").format("YYYY-MM-DD HH:mm:ss")+'@'+guest.address+":"+guest.port+') ----]');
+         console.log('[--- ('+moment().tz("America/Monterrey").format("YYYY-MM-DD HH:mm:ss")+'@'+guest.address+":"+guest.port+') ----]');
 
         var buffer_str = datagram.toString('hex');
+        console.log(buffer_str)
         this.get_decimal= function(str){
             return parseInt(str,16)
         }
