@@ -1,5 +1,8 @@
 {
     "private": true,
+    "name": "my-app",
+  "version": "0.0.0",
+  "type":  "module",
     "scripts": {
         "dev": "npm run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -29,6 +32,11 @@
         "@fortawesome/fontawesome-free": "^5.14.0",
         "bootstrap-icons": "^1.0.0-alpha5",
         "laravel-echo": "^1.8.1",
-        "pusher-js": "^7.0.0"
+        "moment": "^2.27.0",
+        "moment-timezone": "^0.5.31",
+        "mysql": "^2.18.1",
+        "nodemon": "^2.0.4",
+        "pusher-js": "^7.0.0",
+        "socket.io": "^2.3.0"
     }
 }
