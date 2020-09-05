@@ -23,7 +23,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/admin', 'AdminController@index')->name('admin');
 Route::get('/chats', 'ChatsController@index')->name('chats');
 Route::get('/messages', 'ChatsController@fetchMessages');
-
+Route::get('/saveDevice', 'DevicesController@store');
+Route::get('/dev', 'DevicesController@dev');
 Route::post('/messages', 'ChatsController@sendMessage');
 
 Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
