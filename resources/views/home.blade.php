@@ -15,6 +15,7 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    {{ env('PUSHER_APP_ID') }}
                 </div>
             </div>
         </div>
