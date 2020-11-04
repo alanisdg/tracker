@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::resource('mabe','MabeController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -24,6 +24,7 @@ Route::get('/admin', 'AdminController@index')->name('admin');
 Route::get('/chats', 'ChatsController@index')->name('chats');
 Route::get('/messages', 'ChatsController@fetchMessages');
 Route::get('/saveDevice', 'DevicesController@store');
+//Route::get('/mabe', 'DevicesController@mabe');
 Route::get('/dev', 'DevicesController@dev');
 Route::post('/messages', 'ChatsController@sendMessage');
 

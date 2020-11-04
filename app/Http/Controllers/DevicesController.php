@@ -5,8 +5,15 @@ use App\Devices;
 
 use Illuminate\Http\Request;
 
+
 class DevicesController extends Controller
 {
+
+    public function mabe(){
+        return response()->json([
+            'name' => 'ok'
+        ]);
+    }
     public function store(){
         $device = Devices::create([
             'name' => '202',
